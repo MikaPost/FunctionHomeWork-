@@ -167,3 +167,40 @@
 #     return c
 #
 # print(naxErkar("Ian xodoko gna  tun"))
+
+#13.Գրել ֆունկցիա որը որպես արգումենտ կստանա տող և թիվ։
+#Կվերադարձնի այդ թվին համապատասխն ինդեքսում եղած էլէմենտները՝ սկզբից և վերջից։
+
+# def aga(tox, tiv):
+#     a = ""
+#     for i in range(tiv, len(tox)):
+#         a += tox[i]
+#     return a
+# print(aga("xodoko", 2))
+
+
+#15. Գրել ֆունկցիա որը որպես արգումենտ կստանա թիվ և կստուգի պոլինդրոմ է այն թե ոչ։
+
+# def polidrom(tiv):
+#     a = str(tiv)[::-1]
+#     if int(a) == tiv:
+#         return "palindrome"
+#     return "No palindrome"
+#
+#
+# print(polidrom(232))
+
+
+# def is_polynomial(number):
+#     n = number
+#     rev = 0
+#     while (number > 0):
+#         dig = number % 10
+#         rev = rev * 10 + dig
+#         print(rev)
+#         number = number // 10
+#     if (n == rev):
+#         return "palindrome"
+#     return "no palindrome"
+#
+# print(is_polynomial(121))

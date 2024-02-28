@@ -120,7 +120,7 @@
 
 #11. Գրել ֆունկցիա որը կվերադարձնի նախադասության ամենաշատ օգտագործված տառը։
 
-# def naxErkar(nax):
+# def shatTra(nax):
 #     dict = {}
 #     b = 0
 #     c = ''
@@ -137,7 +137,33 @@
 #                 c = d
 #     return c
 #
-# print(naxErkar("Ian xodoko gna  tu"))
+# print(shatTra("Ian xodoko gna  tu"))
 
 #12. Գրել ֆունկցիա որը կվերադարձնի նախադասության ամենաերկար բառում ամենաշատ օգտագործված տառը։
 
+# def naxErkar(nax):
+#     nax = nax.split()
+#     erkar = nax[0]
+#     for i in nax:
+#         if len(erkar) < len(i):
+#             erkar = i
+#     return shatTra(erkar)
+#
+# def shatTra(nax):
+#     dict = {}
+#     b = 0
+#     c = ''
+#     for i in nax:
+#         if i.isalpha():
+#             d = i.lower()
+#             if d not in dict:
+#                 dict[d] = 1
+#             else:
+#                 dict[d] += 1
+#
+#             if dict[d] > b:
+#                 b = dict[d]
+#                 c = d
+#     return c
+#
+# print(naxErkar("Ian xodoko gna  tun"))

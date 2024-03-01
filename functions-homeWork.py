@@ -30,7 +30,7 @@
 #         c += 1
 #     b /= c
 #     return b
-#
+
 # print(mijinTva(1, 2, 3))
 
 
